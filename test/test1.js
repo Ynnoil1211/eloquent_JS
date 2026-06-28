@@ -5,3 +5,4 @@ while (cnt <= 10) {
   cnt += 1;
 }
 console.log(total);
+console.log("hello wordl");
