@@ -1,0 +1,40 @@
+console.log("This is a String");
+console.log('this is a string also');
+console.log(`also a string`);
+console.log("A new line:\nnewline");
+console.log("A newline character is written like \"\\n\".");
+console.log("Div: " + 500/20);
+console.log("Div: ${500/20}");
+console.log(`Div: ${500/20}`);  //use `` + ${} to interpolate
+// Unary and basic arithmetic
+console.log(-(10 - 2));     // → -8 [12]
+console.log(typeof 4.5);    // → "number" [13]
+
+// Special values and Identity
+console.log(NaN == NaN);    // → false (Unique architectural property of NaN) [14]
+console.log(0 / 0);         // → NaN [15]
+
+// Logical operators (Ternary)
+console.log(true ? "yes" : "no"); // → "yes" [16]
+
+// Type Coercion: JS converts types to fit the operator
+console.log(8 * null);      // → 0 (null is coerced to 0) [10]
+console.log("5" - 1);       // → 4 (string "5" is coerced to number 5) [10]
+console.log("5" + 1);       // → "51" (binary + prioritizes string concatenation) [10]
+console.log('a' - 1);       // → NaN (unlike C++, 'a' is not an 8-bit int; it's a string) [10, 17]
+console.log("five" * 2);    // → NaN (failed numeric coercion) [10]
+console.log(false == 0);    // → true (false is coerced to 0) [10, 11]
+
+// Precise Equality vs. Liberal Equality
+console.log("" == false);   // → true (due to coercion) [11]
+console.log("" === false);  // → false (Identity check: no coercion allowed) [11]
+
+// Short-circuit evaluation
+console.log(null || "user"); // → "user" (null is false, returns right-hand value) [18]
+console.log(0 ?? 100);       // → 0 (?? only triggers for null or undefined) [19]
+console.log(0 || 100);
+// → 100
+console.log(0 ?? 100);
+// → 0 print the first element
+console.log(null ?? 100);
+// → 100
