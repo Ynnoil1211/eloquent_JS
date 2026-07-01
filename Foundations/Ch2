@@ -1,4 +1,5 @@
-let theNumber = Number(prompt("Pick a number"));  // State change
-if (!Number.isNaN(theNumber)) {                   // Conditional
-  console.log("Your number is the square of " + theNumber * theNumber);
+var num = 90;
+function sum(num) {
+  return num + num;
 }
+console.log(sum(num));
